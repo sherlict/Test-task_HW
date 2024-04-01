@@ -17,17 +17,20 @@ In Google Cloud Platform, tables are created in BigQuery:
 - events
 - installs
 - orders
+  
 In CLOUD SHELL Editor, Python scripts are created for downloading data via API.
 - load_costs_data_to_bigquery.py
 - load_installs_data_to_bigquery.py
 - load_events_data_to_bigquery.py
 - load_orders_date_to_bigquery.py
+  
 Tasks for downloading 4 scripts are created in crontab:
 - 0 minutes
 - 02 hours
 - every day of the month
 - every month
 - every day of the week
+  
 In BigQuery, SQL queries for calculating metrics are created:
 - ROAS
 - ARPU
