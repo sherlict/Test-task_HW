@@ -3,7 +3,7 @@ import requests
 from google.cloud import bigquery
 from datetime import datetime, timedelta
 
-# Функція для отримання даних з API
+# Function to get data from API
 def fetch_events_data_from_api(date, next_page=None):
     url = "https://......"
     
