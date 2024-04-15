@@ -48,9 +48,9 @@ def load_data_to_bigquery(data, dataset_id, table_id, project_id):
     
 # The main code
 if __name__ == "__main__":
-    yesterday = datetime.now() - timedelta(1)  # Отримання дати попереднього дня
-    dimensions = "location,channel,medium,campaign,keyword,ad_content,ad_group,landing_page"  # Встановіть потрібні розрізи   
-    data = fetch_data_from_api(yesterday, dimensions)  # Передача дати без перетворення в рядок
+    yesterday = datetime.now() - timedelta(1) 
+    dimensions = "location,channel,medium,campaign,keyword,ad_content,ad_group,landing_page" 
+    data = fetch_data_from_api(yesterday, dimensions) 
     
     if data:
         project_id = "test-task-holy-water"
